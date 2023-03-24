@@ -15,7 +15,6 @@ ul {
   padding: 0;
 }
 li {
-  text-transform: capitalize;
   list-style: none;
   color: red;
   display: block;
@@ -26,6 +25,10 @@ li {
   font-weight: 100;
   line-height: 19px;
   text-align: left;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
 .container {
   margin-top: 180px;
