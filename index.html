@@ -11,18 +11,19 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App</title>
+    <title>Mj Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
             <div class="overview">
-          <h1>New York</h1>
+          <h1 id="city">New York</h1>
           <ul>
             <li>Friday 11:17</li>
-            <li>Clear</li>
+            <li id="conditions">Clear</li>
           </ul>
           </div>
           <div class="row">
@@ -30,25 +31,24 @@
                 <div class="clearfix weather-temp">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/415/original/sunny.jpg?1679670383"
-              alt="Clear" class="float-left"
+              alt="Clear" id="icon" class="float-left"
             />
             <span class="float-left unit-temp">
-           <strong> 12</strong><small class="units">°C | <a  href="#">°F </a></small>
+           <strong id="tempterature"> 12</strong><small class="units">°C | <a  href="#">°F </a></small>
           </div>
           </div>
         </span>
           <div class="col-6">
             <ul>
-              <li>Preciptatoin: 0%</li>
-              <li>Humidity:73%</li>
-              <li>Wind: 2 km/h</li>
+              <li>Humidity:<span id="humidity">73%</span> </span></li>
+              <li>Wind: <span id="wind">2</span> km/h</li>
             </ul>
           </div>
         </div>
       </div>
       <small class="Mj">Coded by Mariana Jennings</small>
     </div>
-
     <script src="src/app.js"></script>
+  
   </body>
 </html>

@@ -15,6 +15,7 @@ ul {
   padding: 0;
 }
 li {
+  text-transform: capitalize;
   list-style: none;
   color: red;
   display: block;
@@ -27,11 +28,11 @@ li {
   text-align: left;
 }
 .container {
-  margin-top: 40px;
+  margin-top: 180px;
 }
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30 auto;
+  margin: 0 auto;
 }
 .weather-app {
   padding: 20px;
